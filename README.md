@@ -10,12 +10,6 @@ Ask you questions, discuss program. Good luck!
 
 Задавайте ваши вопросы, обсуждайте программы. Удачи!
 
-
-
-
-
-
-
 **My site (only in russian)// Мой сайт (только на русском)**
 https://shaaprogs.tilda.ws
 
