@@ -1,0 +1,60 @@
+Make(delphi)
+ver(4.05 build 186)
+Add(MainForm,2953706,546,203)
+{
+ Caption="Текстовый редактор"
+ WindowsState=2
+ Icon=[ZIPC60E000078DA636060044239390620A9C0B0818F81418C818141038881420C360C10711010E0631805A360C041C119BDC38567F4FEE3C08788D473889AF682E488D1834B1D3100DD4E52D45312DEA3F68EDA3B6A2FEDED85961587F0D98BAE861AF6E2294BFF931A5624DA7B92487B8FD3327EA90586A3BDF8D21B31F692935E91CD26D75E72C38294BC40AD7C02B6F7ACFE514AEDA4A46D310A460135C0FFFFFFFFA0E37F8C1F6A40F87FFB8F3FF8F18C33FFDB1B782018A8178ACFB79F07E3030CFC608CCD0E00BE0C2497]
+}
+Add(RichEdit,9399418,525,77)
+{
+ Width=384
+ Height=262
+ Align=5
+ Font=[Arial,8,0,0,204]
+ ScrollBars=3
+}
+Add(Menu,5981278,350,182)
+{
+ Menu=#4:Файл|1:(|9:Сохранить|1:-|7:Открыть|1:-|5:Выход|1:)|9:Раскладка|1:(|2:RU|1:-|2:EN|1:-|2:UA|1:-|2:BY|1:)|11:О программе|
+ Point(onSelectNum)
+ link(onSelectNum,8961691:doEvent,[])
+}
+Add(IndexToChanel,8961691,399,189)
+{
+ Count=15
+ link(onEvent2,13498161:doExecute,[(443,202)(443,164)(233,164)(233,111)])
+ link(onEvent4,12654578:doExecute,[(443,216)(443,226)(226,226)(226,251)])
+ link(onEvent6,2953706:doClose,[])
+ link(onEvent8,9047274:doRussianKbd,[(443,244)(443,314)])
+ link(onEvent10,9047274:doEnglishKbd,[(443,258)(443,307)])
+ link(onEvent12,9047274:doUkrainianKbd,[(443,272)(443,321)])
+ link(onEvent14,9047274:doBelorussionKbd,[(443,286)(443,328)])
+ link(onEvent15,1094110:doMessage,[(513,293)(513,160)])
+}
+Add(SDialog,13498161,280,105)
+{
+ Filter="Текстовый файл (TXT)|*.txt|Rich Text File (RTF)|*.rtf|Документ Microsoft Word 1997-2003 (DOC)|*.doc|Книга Microsoft Excel 1997-2003 (XLS)|*.xls|Презентация Microsoft PowerPoint 1997-2003 (PPT)|*.ppt|Веб-страница (HTML)|*.html|Прочие файлы|*.*"
+ Title="Сохранить"
+ FileName=""
+ link(onExecute,9399418:doSave,[])
+}
+Add(ODialog,12654578,245,245)
+{
+ Filter="Все файлы|*.*"
+ Title="Открыть"
+ FileName=""
+ link(onExecute,9399418:doLoad,[(401,251)(401,104)])
+}
+Add(KeyboardLayout,9047274,455,301)
+{
+}
+Add(Message,1094110,595,154)
+{
+ Message="Текстовый редактор, версия 1.0\r\nДанная программа умеет:\r\n-создавать файлы форматов *.doc, *.xls, *.ppt *.rtf, *.txt и многих других;\r\n-открывать файлы *.txt, *.rtf, а также все файлы, созданные с помощью этой программы.\r\n© Шаклов Алексей, 2020\r\nshaaprogs.tilda.ws\r\nИконки взяты с сайта icons8.ru            "
+ Caption="О программе"
+ Icon=4
+}
+Add(StyleXP,8309690,280,49)
+{
+}

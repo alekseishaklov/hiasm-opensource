@@ -1,0 +1,27 @@
+Make(delphi)
+ver(4.05 build 186)
+Add(MainForm,3627141,707,301)
+{
+ Caption="Пример использования Menu"
+}
+Add(Menu,126380,560,287)
+{
+ Menu=#4:File|1:(|4:Open|1:(|6:Open 1|6:Open 2|1:)|4:Exit|
+ Point(onSelectNum)
+ link(onSelectNum,2345105:doEvent,[])
+}
+Add(IndexToChanel,2345105,623,294)
+{
+ Count=5
+ link(onEvent2,3547710:doMessage,[(681,307)(681,223)])
+ link(onEvent4,14746715:doMessage,[(693,321)(693,265)])
+ link(onEvent5,3627141:doClose,[])
+}
+Add(Message,3547710,707,217)
+{
+ Message="Open"
+}
+Add(Message,14746715,707,259)
+{
+ Message="Open 2"
+}

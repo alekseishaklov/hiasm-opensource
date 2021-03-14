@@ -1,0 +1,18 @@
+Make(delphi)
+ver(4.05 build 186)
+Add(MainForm,15563228,616,448)
+{
+}
+Add(WinExec,12865869,553,273)
+{
+ Point(doConsoleExec)
+}
+Add(Button,14478621,357,280)
+{
+ Left=100
+ Top=90
+ Width=70
+ Caption="hiasm.com"
+ Data=String(http:\\hiasm.com)
+ link(onClick,12865869:doShellExec,[])
+}

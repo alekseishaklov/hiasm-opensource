@@ -1,0 +1,48 @@
+Make(delphi)
+ver(4.05 build 186)
+Add(MainForm,2953706,210,350)
+{
+}
+Add(Button,11449681,147,210)
+{
+ Left=10
+ Top=10
+ Width=155
+ Caption="Добавить в автозагрузку"
+ link(onClick,2607155:doWrite,[])
+}
+Add(Registry,2607155,203,203)
+{
+ HKey=2
+ Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Run"
+ Value="prog"
+ link(Data,13784263:AppFileName,[])
+}
+Add(Application,13784263,203,133)
+{
+}
+Add(Button,16085756,147,273)
+{
+ Left=10
+ Top=35
+ Width=155
+ Caption="Удалить из автозагрузки"
+ link(onClick,13347225:doDeleteValue,[])
+}
+Add(Registry,13347225,203,259)
+{
+ HKey=2
+ Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Run"
+ Value="prog"
+ Point(doDeleteValue)
+}
+Add(Label,7030335,371,84)
+{
+ Left=30
+ Top=115
+ Width=330
+ Height=108
+ Font=[Hero,12,0,0,204]
+ Caption="Указанные параметры добавят программу в автозагрузку для всех пользователей. Во избежание ошибок, запустите программу от имени администратора"
+ AutoSize=1
+}
