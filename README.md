@@ -1,4 +1,7 @@
 # hiasm-opensource
+
+![views](https://visitor-badge.glitch.me/badge?page_id=alekseishaklov.hiasm-opensource)
+
 ## Русский
 Простые заготовки программ с открытым исходным кодом, сделанные в [HiAsm](https://hiasm.com).
 Некоторые из этих программ сделаны мною, некоторые сделаны пользователями [форума HiAsm](https://forum.hiasm.com). Вы можете свободно использовать, распространять, редактировать их. Авторы не ограничивали использование контента.
