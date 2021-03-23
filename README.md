@@ -55,3 +55,17 @@ https://shaaprogs.tilda.ws
 
 **Больше о HiAsm // More about HiAsm**
 https://shaaprogs.tilda.ws/hiasm
+
+**Благодарности // Credits**
+
+*Автору HiAsm @puux* за прекрасную программу
+
+*Пользователям HiAsm* за помощь в освоении HiAsm
+
+*@jwenjian* за бейдж статистики
+
+*To author of HiAsm @puux* for the great program
+
+*To HiAsm users* for help with HiAsm
+
+*To @jwenjian* for the stats badge
